@@ -17,17 +17,8 @@
 17            }
 18        }
 19        for(int i=0;i<arr.length;i++){
-20            while(arr[i]!=val){
-21                if(arr[i]>val){
-22                    arr[i]-=x;
-23                    c++;
-24                }
-25                else{
-26                    arr[i]+=x;
-27                    c++;
-28                }
-29            }
-30        }
-31        return c;
-32    }
-33}
+20            c=c+(Math.abs(arr[i]-val)/x);
+21        }
+22        return c;
+23    }
+24}
