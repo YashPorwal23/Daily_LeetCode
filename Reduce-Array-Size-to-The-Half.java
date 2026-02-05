@@ -8,12 +8,12 @@
 8        for(var e:mp.entrySet()){
 9            al.add(e.getValue());
 10        }
-11        Collections.sort(al,Collections.reverseOrder());
+11        Collections.sort(al);
 12        int ans = 0;
 13        int temp = 0;
-14        int c = 0; 
+14        int c = al.size()-1; 
 15        while(temp<nums.length/2){
-16            temp+=al.get(c++);
+16            temp+=al.get(c--);
 17            ans++;
 18        }
 19        return ans;
