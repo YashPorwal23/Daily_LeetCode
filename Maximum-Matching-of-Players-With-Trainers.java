@@ -11,7 +11,7 @@
 11                st++;
 12                end++;
 13            }
-14            else if(players[st]>trainers[end]){
+14            else{
 15                end++;
 16            }
 17        }
