@@ -11,14 +11,12 @@
 11        int n= arr.length;
 12        int val= arr[n/2];
 13        c=0;
-14        for(int i=0;i<arr.length-1;i++){
-15            if(arr[i]%x!=arr[i+1]%x){
+14        for(int i=0;i<arr.length;i++){
+15            if(Math.abs(arr[i]-val)%x!=0){
 16                return -1;
 17            }
-18        }
-19        for(int i=0;i<arr.length;i++){
-20            c=c+(Math.abs(arr[i]-val)/x);
-21        }
-22        return c;
-23    }
-24}
+18            c=c+(Math.abs(arr[i]-val)/x);
+19        }
+20        return c;
+21    }
+22}
