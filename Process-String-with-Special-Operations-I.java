@@ -7,18 +7,17 @@
 7            sb.append(ch);
 8            }
 9            else if(ch=='#'){
-10                String k = sb.substring(0,sb.length());
-11                sb.append(k);
-12            }
-13            else if(ch=='%'){
-14                sb.reverse();
-15            }
-16            else{
-17                if(sb.length()>0){
-18                sb.deleteCharAt(sb.length()-1);
-19                }
-20            }
-21        }
-22        return sb.toString();
-23    }
-24}
+10                sb.append(sb);
+11            }
+12            else if(ch=='%'){
+13                sb.reverse();
+14            }
+15            else{
+16                if(sb.length()>0){
+17                sb.deleteCharAt(sb.length()-1);
+18                }
+19            }
+20        }
+21        return sb.toString();
+22    }
+23}
