@@ -11,8 +11,6 @@ class Solution {
                 smax=arr[i];
             }
         }
-        System.out.println(max);
-        System.out.println(smax);
         max--;
         smax--;
         return max*smax;
