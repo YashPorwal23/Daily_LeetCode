@@ -7,10 +7,7 @@ class Solution {
                 smax=max;
                 max=arr[i];
             }
-            else if(arr[i]<max && arr[i]>smax){
-                smax=arr[i];
-            }
-            else if(arr[i]==max){
+            else if(arr[i]>smax){
                 smax=arr[i];
             }
         }
